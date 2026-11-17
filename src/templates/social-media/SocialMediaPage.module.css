@@ -1,0 +1,59 @@
+.stub {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.banner {
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, #eee7dc 0%, #f4f7f9 55%),
+    var(--color-surface-elevated);
+  border: 1px dashed #cbb999;
+}
+
+.bannerTitle {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.bannerText {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--color-ink-soft);
+}
+
+.previewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+@media (max-width: 800px) {
+  .previewGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-line);
+  font-size: 0.95rem;
+}
+
+.muted {
+  color: var(--color-muted);
+}
